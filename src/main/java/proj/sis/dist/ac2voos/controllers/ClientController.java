@@ -2,6 +2,7 @@ package proj.sis.dist.ac2voos.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import proj.sis.dist.ac2voos.domain.client.Client;
 import proj.sis.dist.ac2voos.domain.client.ClientRepository;
@@ -10,7 +11,7 @@ import proj.sis.dist.ac2voos.domain.client.RequestClient;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 import java.util.Optional;
-
+@Controller
 @RestController
 @RequestMapping("/client")
 public class ClientController {
